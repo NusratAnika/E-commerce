@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Auctions</title>
+        <link rel = "stylesheet" href = "auctioncss.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class = "row">
+                        <div class = "col-5">
+
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-success btn-lg" id = "createAuction"  data-toggle="collapse" href="#collapseAuction" role="button" aria-expanded="true" aria-controls="collapseExample">Create an Auction</button>
+                        </div>
+                        <div class ="col-5">
+
+                        </div>
+                    </div>
+
+                    
+                        <div  class = "collapse" id = "collapseAuction" id = "collapseAuction" class="card" >
+                            <h5 class="card-header">Create Auction</h5>
+                            <div class="card-body">
+                              
+                                <div class = "row" >
+                                    <div class = "col-3">
+            
+                                    </div>
+                                    <div class="col-6">
+
+
+                                        <form action = "/ecommerce/CreateAuction" method = "get" enctype="multipart/form-data">
+
+                                            <input type = "hidden" name = "id" value = "">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Upload product piture</label>
+                                            <div class="file-field" id = "imageUpload">
+                                                <div class="btn btn-primary btn-sm float-left">
+                                                  <span>Choose file</span>
+                                                  <input type="file" name = "productImages">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                                
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Give product description here......." rows="3" cols="70" name = "productDescription"></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class = "form-group">
+                                            <label for="birthdaytime">Select the Dead Time</label>
+                                        <input type="datetime-local" id="birthdaytime" name="deadTime">
+                                        </div> 
+                                        <div>
+                                            <button type="submit" class="btn btn-success">Start Auction Now</button>
+                                        </div>
+                                        
+                                        </form>
+                                    </div>
+                                    <div class ="col-3">
+            
+                                    </div>
+                                </div>
+
+                            </div>
+                          </div>
+
+
+
+
+                          <section class = "productSection" >
+                            <div class="container">
+                              <div class="row d-flex">
+                                <div class="col-md-4 d-flex ">
+                                    <div class="card" style="width:325px; margin-top: 20px">
+                                        <img class="card-img-top" src="auction_pic1.JPG" alt="Card image" style="width:325px ; height:200px">
+                                        <div class="card-body">
+                                        <p><img src="auction_pic1.JPG" alt="Avatar" class = "profilePicture">
+                                          <h4 class="card-title">Fedric Weiver</h4></p>
+                                          <p class="card-text">Self Employed, Newyork</p>
+                                          <p class="card-text">Bidding time: </p>
+                                          <a href="#" class="btn btn-primary">See Profile</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-4 d-flex ">
+                                    <div class="card" style="width:325px; margin-top: 20px">
+                                        <img class="card-img-top" src="auction_pic2.JPG" alt="Card image" style="width:325px ; height:200px">
+                                        <div class="card-body">
+                                        <p><img src="auction_pic2.JPG" alt="Avatar" class = "profilePicture">
+                                          <h4 class="card-title">Michel Denver</h4></p>
+                                          <p class="card-text">Worker, California</p>
+										  <p class="card-text">Bidding time: </p>
+                                          <a href="#" class="btn btn-primary">See Profile</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-4 d-flex ">
+                                    <div class="card" style="width:325px; margin-top: 20px">
+                                        <img class="card-img-top" src="auction_pic3.JPG" alt="Card image" style="width:325px ; height:200px">
+                                        <div class="card-body">
+                                        <p><img src="auction_pic3.JPG" alt="Avatar" class = "profilePicture">
+                                          <h4 class="card-title">Emily Clark</h4></p>
+                                          <p class="card-text">Actress, Hollywood,LA</p>
+										   <p class="card-text">Bidding time: </p>
+                                          <a href="#" class="btn btn-primary">See Profile</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-md-4 d-flex ">
+                                    <div class="card" style="width:325px; margin-top: 20px">
+                                        <img class="card-img-top" src="auction_pic4.JPG" alt="Card image" style="width:325px ; height:200px">
+                                        <div class="card-body">
+                                        <p><img src="auction_pic4.JPG" alt="Avatar" class = "profilePicture">
+                                          <h4 class="card-title">Silvia Joe</h4></p>
+                                          <p class="card-text">Designer, Moscow</p>
+										  <p class="card-text">Bidding time: </p>
+                                          <a href="#" class="btn btn-primary">See Profile</a>
+                                        </div>
+                                      </div>
+                                </div>
+								
+                                <div class="col-md-4 d-flex ">
+                                    <div class="card" style="width:325px; margin-top: 20px">
+                                        <img class="card-img-top" src="auction_pic5.JPG" alt="Card image" style="width:325px ; height:200px">
+                                        <div class="card-body">
+                                        <p><img src="auction_pic5.JPG" alt="Avatar" class = "profilePicture">
+                                          <h4 class="card-title">Riona Din</h4></p>
+                                          <p class="card-text">Student, MSU</p>
+										  <p class="card-text">Bidding time: </p>
+                                          <a href="#" class="btn btn-primary">See Profile</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                
+                                <div class="col-md-4 d-flex ">
+                                    <div class="card" style="width:325px; margin-top: 20px">
+                                        <img class="card-img-top" src="auction_pic6.JPG" alt="Card image" style="width:325px ; height:200px">
+                                        <div class="card-body">
+                                        <p><img src="auction_pic6.JPG" alt="Avatar" class = "profilePicture">
+                                          <h4 class="card-title">Berlin Monoro</h4></p>
+                                          <p class="card-text">Part time Law worker, LasVegas</p>
+										  <p class="card-text">Bidding time: </p>
+                                          <a href="#" class="btn btn-primary">See Profile</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                
+                                  
+                                
+                              </div>
+                            </div>
+                          </section>
+
+
+
+
+
+
+
+
+                                
+
+
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+</html>
